@@ -10,7 +10,7 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 )
 
-func sig(pri, sha string) string {
+func Sig(pri, sha string) string {
 	ret := ""
 	for {
 		_pri, err := crypto.HexToECDSA(pri)
